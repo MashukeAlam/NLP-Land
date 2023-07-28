@@ -11,6 +11,9 @@ function App() {
   return (
     <>
       <p>hello</p>
+      <form action="http://localhost:3333/summary" method="post">
+        <input type="text" name="raw_text" id="" />
+      </form>
     </>
   )
 }
