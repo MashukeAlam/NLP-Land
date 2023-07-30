@@ -18,6 +18,7 @@ CORS(app)
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('punkt')
+nltk.download('vader_lexicon')
 
 def sentimentAnalyzer(text):
     print(f"# Received text: {text}")

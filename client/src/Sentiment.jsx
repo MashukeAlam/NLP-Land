@@ -8,7 +8,7 @@ const Sentiment = () => {
   const text = useRef('');
   const handleClick = async () => {
     // console.log(text.current.value);
-    const {data} = await axios.post('http://localhost:3333/sentiment', {text: text.current.value});
+    const {data} = await axios.post('https://nlp-back.onrender.com/sentiment', {text: text.current.value});
     setPos(data['pos']);
     setNeg(data['neg']);
     setNeu(data['neu']);

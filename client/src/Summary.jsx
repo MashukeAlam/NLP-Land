@@ -5,7 +5,7 @@ const Summary = () => {
   const text = useRef('');
   const handleClick = async () => {
     // console.log(text.current.value);
-    const {data} = await axios.post('http://localhost:3333/summary', {text: text.current.value});
+    const {data} = await axios.post('https://nlp-back.onrender.com/summary', {text: text.current.value});
     setSummary(data);
   }
     return (

@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     const fetch = async () => {
-      const res = await axios.get('http://localhost:3333/running')
+      const res = await axios.get('https://nlp-back.onrender.com/running')
       console.log(res);
       setServer(res.data['server_running'])
     }
