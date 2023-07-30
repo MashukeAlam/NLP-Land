@@ -3,3 +3,4 @@ Flask_Cors
 nltk
 spacy
 Gunicorn
+waitress

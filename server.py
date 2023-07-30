@@ -107,14 +107,15 @@ def summary():
     return textSummarizer(data, 0.2)
 
 # remove GET in production
-@app.route('/sentiment', methods=['POST', 'GET'])
+@app.route('/sentiment', methods=['POST'])
 @cross_origin(origins='*')
 def sentiment():
     data = request.json['text']
     return sentimentAnalyzer(data)
 
 
-# if __name__ == "__main__":
-#     print("Starting Server...")
-#     app.run()
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0")
+    print("Server started.")
 
