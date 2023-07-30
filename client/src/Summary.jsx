@@ -10,7 +10,7 @@ const Summary = () => {
   }
     return (
         <>
-        <label htmlFor="inp">Input</label>
+        <p htmlFor="inp">Input</p>
         <textarea ref={text} type="text" name="raw_text" id="inp" />
         <button onClick={handleClick}>Summarize</button>
 
