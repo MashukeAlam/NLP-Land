@@ -15,7 +15,9 @@ from heapq import nlargest
 
 app = Flask(__name__)
 CORS(app)
-nltk.download('all')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
 
 def sentimentAnalyzer(text):
     print(f"# Received text: {text}")
@@ -116,6 +118,6 @@ def sentiment():
 
 if __name__ == "__main__":
     from waitress import serve
-    serve(app, host="0.0.0.0")
+    serve(app, host="0.0.0.0", port="3333")
     print("Server started.")
 
