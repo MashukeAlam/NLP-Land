@@ -91,6 +91,9 @@ def textSummarizer(text, percentage):
     # Return final summary
     return summary
 
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
 @app.route('/running')
 def running():
@@ -112,5 +115,6 @@ def sentiment():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=3333)
+    print("Starting Server...")
+    app.run()
 
