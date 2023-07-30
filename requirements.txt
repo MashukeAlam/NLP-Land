@@ -1,4 +1,4 @@
-Flask==2.3.2
-Flask_Cors==4.0.0
-nltk==3.8.1
-spacy==3.6.0
+Flask
+Flask_Cors
+nltk
+spacy
