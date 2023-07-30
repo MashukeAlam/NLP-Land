@@ -114,7 +114,7 @@ def sentiment():
     return sentimentAnalyzer(data)
 
 
-if __name__ == "__main__":
-    print("Starting Server...")
-    app.run()
+# if __name__ == "__main__":
+#     print("Starting Server...")
+#     app.run()
 
